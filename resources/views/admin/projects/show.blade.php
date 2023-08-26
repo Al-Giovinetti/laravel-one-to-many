@@ -7,6 +7,7 @@
             <ul class="list-unstyled p-3">
                 <li> <strong> ID </strong> {{ $project['id']}}</li>
                 <li> <strong>Title</strong> {{ $project['title']}}</li>
+                <li>  <strong>Type</strong> {{ $project->type->name}}</li>
                 <li class="py-2">
                     @if(str_starts_with($project->image,'http'))
                         <img src="{{ $project->image }}" alt="image {{ $project->title }}">
